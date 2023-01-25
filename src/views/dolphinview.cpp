@@ -1119,9 +1119,9 @@ void DolphinView::slotItemContextMenuRequested(int index, const QPointF& pos)
     Q_EMIT requestContextMenu(pos.toPoint(), item, selectedItems(), url());
 }
 
-void DolphinView::slotViewContextMenuRequested(const QPointF& pos)
+void DolphinView::slotViewContextMenuRequested()
 {
-    Q_EMIT requestContextMenu(pos.toPoint(), KFileItem(), selectedItems(), url());
+    Q_EMIT requestContextMenu(QCursor::pos(), KFileItem(), selectedItems(), url());
 }
 
 void DolphinView::slotHeaderContextMenuRequested(const QPointF& pos)

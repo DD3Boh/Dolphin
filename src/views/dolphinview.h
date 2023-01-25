@@ -660,7 +660,7 @@ private Q_SLOTS:
     void slotItemsActivated(const KItemSet &indexes);
     void slotItemMiddleClicked(int index);
     void slotItemContextMenuRequested(int index, const QPointF& pos);
-    void slotViewContextMenuRequested(const QPointF& pos);
+    void slotViewContextMenuRequested();
     void slotHeaderContextMenuRequested(const QPointF& pos);
     void slotHeaderColumnWidthChangeFinished(const QByteArray& role, qreal current);
     void slotSidePaddingWidthChanged(qreal width);

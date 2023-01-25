@@ -230,10 +230,10 @@ void FoldersPanel::slotItemContextMenuRequested(int index, const QPointF& pos)
     }
 }
 
-void FoldersPanel::slotViewContextMenuRequested(const QPointF& pos)
+void FoldersPanel::slotViewContextMenuRequested()
 {
     QPointer<TreeViewContextMenu> contextMenu = new TreeViewContextMenu(this, KFileItem());
-    contextMenu.data()->open(pos.toPoint());
+    contextMenu.data()->open(QCursor::pos());
     if (contextMenu.data()) {
         delete contextMenu.data();
     }
